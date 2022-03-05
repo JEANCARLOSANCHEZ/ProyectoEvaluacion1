@@ -1,0 +1,32 @@
+#include <iostream>
+#include "biblioteca2.hpp"
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	int a, b;
+	cout<< "ingrese primer numero: ";
+	cin>>a;
+	cout<<"ingrese segundo numero: ";
+	cin>>b;
+	
+	int rs=suma(int a, int b);
+	cout<< "la suma es: "<<rs;
+	
+	cout<< "ingrese primer numero a dividir: ";
+	cin>>a;
+	cout<<"ingrese segundo numero divisor: ";
+	cin>>b;
+	
+	int rd=divi(int a, int b);
+	cout<< "la division es: "<<rs;
+	
+	int numfac;
+	do{
+		printf("ingresa el numero de elementos: ");
+		scanf("%i",&numfac);
+	}while(numfac<=0);
+	
+	system("pause");
+	return 0;
+}
